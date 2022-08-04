@@ -1,10 +1,14 @@
 import React from "react";
+import Header from "./components/common/Header";
+import AppRouter from "./AppRouter";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Fvaly</h1>
-    </div>
+    <>
+      <AppRouter>
+        <Header />
+      </AppRouter>
+    </>
   );
 }
 
