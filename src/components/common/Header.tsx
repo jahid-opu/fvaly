@@ -16,7 +16,7 @@ const Header = () => {
             </li>
             <li>
               <FaRegEnvelope />{" "}
-              <a href="mail-to:support@fvaly.com">support@fvaly.com</a>
+              <a href="mail-to:support@fvaly.com">support@fvalyyy.com</a>
             </li>
           </ul>
           <div>
