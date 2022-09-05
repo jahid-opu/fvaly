@@ -1,6 +1,5 @@
 import React, { FC, Suspense } from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 const Home = React.lazy(() => import("./pages/Home/Home"));
 const Help = React.lazy(() => import("./pages/Help/Help"));
 

@@ -1,8 +1,7 @@
-import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { FiPhoneCall } from "react-icons/fi";
-import { FaRegEnvelope } from "react-icons/fa";
 import { BsPhone } from "react-icons/bs";
+import { FaRegEnvelope } from "react-icons/fa";
+import { FiPhoneCall } from "react-icons/fi";
 
 const Header = () => {
   return (
@@ -16,7 +15,7 @@ const Header = () => {
             </li>
             <li>
               <FaRegEnvelope />{" "}
-              <a href="mail-to:support@fvaly.com">support@fvalyyy.com</a>
+              <a href="mail-to:support@fvaly.com">support@fvaly.com</a>
             </li>
           </ul>
           <div>
