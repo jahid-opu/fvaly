@@ -1,8 +1,16 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+import {
+  Button,
+  Container,
+  Form,
+  InputGroup,
+  Nav,
+  Navbar,
+} from "react-bootstrap";
+import { BiSearch, BiUser } from "react-icons/bi";
 import { BsPhone } from "react-icons/bs";
 import { FaRegEnvelope } from "react-icons/fa";
-import { FiPhoneCall } from "react-icons/fi";
-
+import { FiPhoneCall, FiShoppingBag } from "react-icons/fi";
+import logo from "../../assets/images/fvaly.png";
 const Header = () => {
   return (
     <div className="header_component">
@@ -24,13 +32,39 @@ const Header = () => {
           </div>
         </Container>
       </div>
+      <div className="middle-header">
+        <Container>
+          <div className="d-flex align-items-center gap-3">
+            <img className="branding" src={logo} alt="Fvaly" />
+            <InputGroup className="mb-3">
+              <Form.Control
+                className="border border-primary"
+                placeholder="Search Here..."
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <Button variant="primary" id="button-addon2">
+                <BiSearch className="text-white" />
+              </Button>
+            </InputGroup>
+            <ul className="list-icon list-unstyled d-flex gap-3 py-3">
+              <li>
+                <FiShoppingBag />
+              </li>
+              <li>
+                <BiUser />
+              </li>
+            </ul>
+          </div>
+        </Container>
+      </div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <Navbar.Brand href="#home">Categories</Navbar.Brand>
+          <Nav className="ms-auto">
+            <Nav.Link href="#home">Newsfeed</Nav.Link>
+            <Nav.Link href="#features">Merchant Zone</Nav.Link>
+            <Nav.Link href="#pricing">Help</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
