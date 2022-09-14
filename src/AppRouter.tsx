@@ -1,3 +1,4 @@
+import ProductDetails from "pages/ProductDetails";
 import React, { FC, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 const Home = React.lazy(() => import("./pages/Home/Home"));
@@ -15,6 +16,7 @@ const AppRouter: FC<Props> = ({ children }) => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/help" element={<Help />} />
+          <Route path="/product:id" element={<ProductDetails />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
